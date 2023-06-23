@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* We can style inner elements of a tag by chaining the selectors without commas */
+            div p { color: red; }
+            div p span{color: grey;}
+            p{ color: blue; }
+            span{ color: green; }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h2>STYLING INTERNAL (CHILD) ELEMENTS</h2>
+            <hr/>
+            <h2>NESTED SELECTOR</h2>
+            <hr/>
+        </center>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            eligendi labore quis quas numquam omnis vitae asperiores, maiores,
+            quisquam quidem sit temporibus. Ipsam velit molestias, accusantium
+            tempora voluptatibus odit et!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <span
+                >Dolorum excepturi id, corrupti error harum odio? Mollitia, quos
+                excepturi. Ea officiis ex tempore cum mollitia,
+            </span>
+            rerum facilis veniam nemo suscipit quos.
+        </p>
+        <hr/>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore laborum at sunt deserunt modi aut voluptas! Debitis iste soluta deleniti, nostrum voluptatum sapiente sunt quia laboriosam, at, magni reiciendis maiores?</span>
+        <hr/>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                eligendi labore quis quas numquam omnis vitae asperiores, maiores,
+                quisquam quidem sit temporibus. Ipsam velit molestias, accusantium
+                tempora voluptatibus odit et!
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span
+                    >Dolorum excepturi id, corrupti error harum odio? Mollitia, quos
+                    excepturi. Ea officiis ex tempore cum mollitia,
+                </span>
+                rerum facilis veniam nemo suscipit quos.
+            </p>
+        </div>
+    </body>
+</html>

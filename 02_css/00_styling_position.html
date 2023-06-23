@@ -1,0 +1,63 @@
+<!--
+    Cascading Style Sheets, fondly referred to as CSS, 
+    is a simply designed language intended to simplify 
+    the process of making web pages presentable. 
+    
+    CSS allows you to apply styles to web pages. 
+    More importantly, CSS enables you to do this independently 
+    of the HTML that makes up each web page. It describes how a 
+    webpage should look: it prescribes colors, fonts, spacing, 
+    and much more. In short, you can make your website look however you want. 
+    CSS lets developers and designers define how it behaves, 
+    including how elements are positioned in the browser.
+-->
+
+<!-- 1. INLINE STYLING -->
+<!-- Using the style attribute, we can apply styling to our 
+    HTML inside individual HTML tags with inline styling.-->
+
+<!-- 2. INTERNAL STYLING  -->
+<!-- An internal CSS is used to define a style for a single HTML page.
+An internal CSS is defined in the <head> section of an HTML page,
+within a <style> element. -->
+
+<!-- 3. EXTERNAL CSS -->
+<!-- An external style sheet is used to define the style for many HTML pages.
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./resources/stylesheet/style.css">
+
+    <!-- Internal Styling goes here -->
+    <style>
+        div { color: brown; }
+    </style>
+
+</head>
+<body>
+    <!-- Inline Styling -->
+    <p style="color: blueviolet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quia dolorum unde voluptas exercitationem quo facere libero sunt dicta eaque harum, quidem perspiciatis cupiditate incidunt rem blanditiis officiis ab neque?</p>
+    <p style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quia dolorum unde voluptas exercitationem quo facere libero sunt dicta eaque harum, quidem perspiciatis cupiditate incidunt rem blanditiis officiis ab neque?</p>
+    <p style="color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quia dolorum unde voluptas exercitationem quo facere libero sunt dicta eaque harum, quidem perspiciatis cupiditate incidunt rem blanditiis officiis ab neque?</p>
+
+    <!-- Internal Styling -->
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci et vero necessitatibus corporis eos, laboriosam odio maiores, sequi aut aspernatur doloremque minus perferendis eligendi nesciunt voluptate, reiciendis beatae magnam!
+        </p>
+    </div>
+
+    <!-- External Styling -->
+    <div>
+        <p>
+            Lorem, ipsum dolor sit <span> amet consectetur adipisicing elit.</span> Sapiente dolorem repudiandae explicabo eos architecto sed maiores debitis ipsum nulla voluptas voluptatibus ullam nobis obcaecati est, iusto ut ad? Non, numquam?
+        </p>
+    </div>
+</body>
+</html>
