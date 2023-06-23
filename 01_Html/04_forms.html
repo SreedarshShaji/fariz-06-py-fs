@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration page</title>
+    </head>
+    <body>
+        <center>
+            <h1>Registration Form</h1>
+            <form action="action.py">
+                <div>
+                    <label for="username">User name</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Your name"
+                        pattern="[a-zA-Z.]{3,10}$"
+                        title="Your name must contain only alphabet and . , length is expected to be between 3&10"
+                    />
+                </div>
+                <br />
+                <div>
+                    <label for="email">email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="email id"
+                    />
+                </div>
+                
+                <br />
+                <div>
+                    <label for="password">password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Your password"
+                    />
+                </div>
+                <br />
+                <div>
+                    <label for="age">age</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        placeholder="your age"
+                    />
+                </div>
+                <br />
+                <div>
+                    <label>Gender</label>
+                    <input
+                        type="radio"
+                        id="gen"
+                        name="gen"
+                        value="male"
+                        checked
+                    />Male
+                    <input
+                        type="radio"
+                        id="gen"
+                        name="gen"
+                        value="female"
+                    />Female
+                    <input
+                        type="radio"
+                        id="gen"
+                        name="gen"
+                        value="other"
+                    />Other
+                </div>
+                <br />
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" />
+                <br />
+                <div>
+                    <label for="district">District</label>
+                    <select name="dis">
+                        <option value="klm">Kollam</option>
+                        <option value="tvm" selected>TVM</option>
+                        <option value="ktm">KTM</option>
+                        <option value="apz">Aalapuzha</option>
+                        <option value="ekm">EKM</option>
+                    </select>
+                </div>
+                <br />
+                <div>
+                    <p>I hereby declare that...</p>
+                    <input type="checkbox" name="acceptCondition" /> I accept
+                    <input type="checkbox" name="acceptCondition" /> I have read
+                    the document fully
+                </div>
+                <div>
+                    <input type="submit" name="submit"/>
+                    <input type="reset" name="submit"/>
+                </div>
+            </form>
+        </center>
+    </body>
+</html>
