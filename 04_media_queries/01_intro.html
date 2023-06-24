@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        /* This will style for a smart phone */
+        @media(max-width:500px) {
+
+            body {
+                background-color: red;
+                color: white;
+            }
+
+            .smartphone h1 {
+                display: inline;
+            }
+
+        }
+
+        /* Styling for tablet */
+        @media(max-width:768px) and (min-width:501px) {
+
+            body {
+                background-color: green;
+                color: white;
+                padding-top: 200px;
+            }
+
+            .tablet h1 {
+                display: inline;
+            }
+
+        }
+
+        
+         /* For normal laptop screen */
+         @media (min-width:769px) and (max-width:1200px){
+            body{
+                background-color: blue;
+                color: white;
+                padding-top: 300px;
+            }
+            .normal h1{
+                display: block;
+            }
+        }
+        
+         /* For wide screen */
+         @media (min-width:1200px){
+            body{
+                background-color: darkgreen;
+                color: white;
+                padding-top: 500px;
+            }
+            .widescreen h1{
+                display: block;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="smartphone">
+        <h1>Smartphone</h1>
+    </div>
+    <div class="tablet">
+        <h1>Tablet</h1>
+    </div>
+    <div class="normal">
+        <h1>Normal Laptop Screen</h1>
+    </div>
+    <div class="widescreen">
+        <h1>Widescreen</h1>
+    </div>
+</body>
+
+</html>
